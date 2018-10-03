@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+	<h1> Welcome to Sourav's Pizza! </h1>
+
+    <form id="customerInformationForm">
+    	<h2> Enter customer information. </h2>
+
+		<label id="firstNameLabel">First name: </label>
+    	<input id="firstNameInput" type="text" required title="Enter first name" />
+    	<br/> <br/>
+
+    	<label id="lastNameLabel">Last name: </label>
+    	<input id="lastNameInput" type="text" required title="Enter last name"/>
+    	<br/> <br/>
+
+    	<h2> What kind of pizza would you like today? </h2> <br/>
+
+    	<input id="cheesePizzaInput"
+        type="radio"
+        name="pizzaType"
+        value="Cheese Pizza">Cheese Pizza</input><br/>
+    	<input id="pepperoniPizzaInput"
+        type="radio"
+        name="pizzaType"
+        value="Pepperoni Pizza">Pepperoni Pizza</input><br/>
+    	<input id="chickenPizzaInput"
+        type="radio"
+        name="pizzaType"
+        value="Chicken Pizza">Chicken Pizza</input><br/>
+
+
+
+   <br/>
+
+
+
+   		<h2> What size of pizza would you like today? </h2>
+        <input required id="smallSizeInput"
+        type="radio"
+        name="pizzaSize"
+        value="small">Small</input><br/>
+        <input required id="mediumSizeInput"
+        type="radio"
+        name="pizzaSize"
+        value="medium">Medium</input><br/>
+        <input required id="largeSizeInput"
+        type="radio"
+        name="pizzaSize"
+        value="large">Large</input><br/>
+
+    <br/>
+		
+
+    	<input type="button" id="submitButton" value="Place Order" title="Click to place and order"/>
+     </form>
+
+    <p id="confirmation"> </p>
+		<h3> Orders </h3>
+
+		<table id ="ordersTable" class="center-me">
+			<thead>
+				<tr>
+						<th> Type </th>
+						<th> Size </th>
+						<th> Delete </th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+
+		</table>
+
+		<h3> Raw JSON </h3>
+		<p id = "rawJson"> </p>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
